@@ -1,0 +1,166 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en"
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 id="title">
+    freeCodeCamp Survey Form</h1> <p id="description">thank you for taking the time to help us improve the platform</p>
+</body>
+<form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+<fieldset>
+<label id="name-label" for="name">Name: <input placeholder="name" id="name" name="name" type="text" required /></label>
+
+<label id="email-label" for="email">Enter Your Email: <input placeholder="email"id="email" name="email" type="email" required /></label>
+<label id="number-label" for="age">Input your age (years): <input placeholder="age" id="number" type="number" name="age" min="13" max="120" /></label>
+<label for="role">How did you hear about us?
+          <select id="dropdown" id="role" name="role">
+            <option value="">Select current role</option>
+            <option value="1"> Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Full Time Learner</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+</fieldset>
+<fieldset><label for="definitely"><input value="definitely" id="definitely" type="radio" name="recommend" class="inline" /> Definitely</label>
+        <label for="maybe"><input value="maybe" id="maybe" 
+type="radio" name="recommend" class="inline"/>
+Maybe</label>
+<label for="not-sure"><input value="not-sure" id="not-sure" 
+type="radio" name="recommend" class="inline"/>
+Not sure</label>
+</fieldset>
+<fieldset><label for="role">What is your favorite feature of freeCodeCamp?
+          <select id="role" name="role">
+            <option value="">Select an option</option>
+            <option value="1"> Challenges</option>
+            <option value="2">Projects</option>
+            <option value="3">Community</option>
+            <option value="4">Open Source</option>
+            <option value="5">Other</option>
+          </select>
+        </label></fieldset>
+<fieldset><label for="terms-and-conditions" name="terms-and-conditions">
+          <input value="Frontend"id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> Front-end Projects
+        </label>
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input value="BackendProjects" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> Back-end Projects
+        </label>
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input value="Data-Visualization" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> Data Visualization
+        </label>
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input value="challenges" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> Challenges
+        </label>
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input value="OpenSource"id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> Open Source Community
+        </label>
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input value="Glitterhelp" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> Gitter help rooms
+        </label>
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input value="Videos" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> Videos
+        </label>
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input value="citymeetups" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> City Meetups
+        </label>
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input value="forum" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> Forum
+        </label>
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input value="wiki" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> Wiki
+        </label>
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input value="Additional Courses" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> Additional Courses
+        </label></fieldset><fieldset><label for="bio">Any comments or suggestions?
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label></fieldset>
+        <input id="submit" type="submit" value="Submit" />
+</form>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+** end of undefined **
+
